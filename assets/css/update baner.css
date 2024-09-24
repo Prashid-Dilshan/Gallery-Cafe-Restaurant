@@ -1,0 +1,193 @@
+
+
+body {  
+  padding: 150px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background: url("../images/admin.jpg");
+  
+}
+
+
+::-webkit-scrollbar {
+  width: 15px; 
+  height: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+  border-radius: 10px; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #0b84e1; 
+  border-radius: 10px; 
+  border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #004579; 
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 3rem;
+  transition: color 0.3s ease;
+  padding-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+  padding-left:80px ;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #0000005d;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  color: #000000;
+  border: 1px #ff9d2e solid;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #0000005d;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color:  #ff9d2e;
+  outline: none;
+}
+
+input[type="text"]:hover {
+  border-color:  #000000 2px solid;
+  outline: none;
+}
+
+button, .back-button, .delete-button {
+  padding: 10px 16px;
+  cursor: pointer;
+  background-color: #0b84e1;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .back-button:hover, .delete-button:hover {
+  background-color: #ff9d2e;
+  color: #000;
+  transform: scale(1.05);
+}
+
+button:active, .back-button:active, .delete-button:active {
+  background-color: #d97d1a;
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+
+.banner-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.banner-table th, .banner-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid hsla(0, 0%, 0%, 0.61);
+}
+
+.banner-table th {
+  background-color: #000000a2;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.banner-table td {
+  transition: background-color 0.3s ease;
+}
+
+.banner-table tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+.banner-table tr:hover td {
+  background-color: #f1f1f1;
+}
+
+.banner-table img {
+  max-width: 100px;
+  border-radius: 8px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

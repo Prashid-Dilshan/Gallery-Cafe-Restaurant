@@ -1,0 +1,263 @@
+/*
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+
+body {
+  background: url("../images/admin.jpg");
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.wrapper {
+  width: 400px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: #ff9d2e;
+  margin: 10px auto;
+  border-radius: 3px;
+}
+
+
+.form-container {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-inner {
+  position: relative;
+}
+
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.field input:focus {
+  border-color: #ff9d2e;
+  box-shadow: 0 0 10px rgba(255, 157, 46, 0.4);
+}
+
+
+.field.btn {
+  margin-top: 20px;
+}
+
+.field .btn-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff9d2e;
+  border-radius: 12px;
+  z-index: -1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.2;
+}
+
+.field input[type="submit"] {
+  background: #ff9d2e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.field input[type="submit"]:hover {
+  background: #ff6f00;
+  transform: translateY(-3px);
+}
+
+.field input[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+
+p {
+  color: #e74c3c;
+  font-size: 14px;
+  margin: 15px 0;
+  font-weight: 500;
+}
+*/
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url("../images/admin login.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 420px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 6px;
+  background: #ff8b06;
+  margin: 12px auto 0;
+  border-radius: 3px;
+
+}
+
+.form-container {
+  background: #a0a4a7;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+}
+
+.form-inner {
+  position: relative;
+}
+
+.field {
+  margin-bottom: 25px;
+}
+
+.field input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+}
+
+.field input:focus {
+  border-color: #ff9d2e;
+  box-shadow: 0 0 12px rgba(255, 157, 46, 0.5);
+  background-color: #fff;
+}
+
+.field.btn {
+  margin-top: 25px;
+  position: relative;
+}
+
+.field .btn-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff9d2e;
+  border-radius: 15px;
+  z-index: -1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.3;
+}
+
+.field input[type="submit"] {
+  background: #ff9d2e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 15px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.field input[type="submit"]:hover {
+  background: #ff6f00;
+  transform: translateY(-4px);
+}
+
+.field input[type="submit"]:active {
+  transform: translateY(2px);
+}
+
+p {
+  color: #e74c3c;
+  font-size: 15px;
+  margin: 20px 0;
+  font-weight: 600;
+}

@@ -1,0 +1,137 @@
+
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background: url("../images/admin.jpg");
+
+}
+
+.cart-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+.cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.cart-item img {
+  max-width: 150px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-details h3 {
+  margin: 0;
+  color: #333;
+}
+
+.cart-item-details .price {
+  font-size: 1.2em;
+  color: #ff9d2e;
+}
+
+.cart-item-details .quantity {
+  color: #555;
+}
+
+.total-price {
+  text-align: right;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.delivery-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.delivery-form label {
+  margin-top: 10px;
+  color: #333;
+}
+
+.delivery-form input, .delivery-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.delivery-form button {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background-color: #ff9d2e;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delivery-form button:hover {
+  background-color: #e68a1e;
+}
+
+.error, .success {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+
+
+.back-button-container {
+  margin-top: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #ff9d2e;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #ff9d2e;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #e88b19;
+  color: #ffffff;
+}

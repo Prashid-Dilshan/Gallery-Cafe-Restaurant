@@ -1,0 +1,95 @@
+
+body {
+  font-family:'Playfair Display', serif;
+  background: url("../images/admin.jpg");
+  margin: 0;
+  padding: 0;
+}
+
+.preorder-details-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preorder-details-container h1{
+  text-align: center;
+  color: #000000;
+  font-size: 3rem;
+  margin-bottom: 20px;;
+}
+
+.back-button-container {
+  margin-bottom: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff9d2e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e68a1c;
+}
+
+.order-container {
+  margin-bottom: 30px;
+}
+
+.customer-details {
+  margin-bottom: 20px;
+}
+
+.customer-details p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.order-items {
+  margin-top: 20px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.order-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.order-item-details {
+  flex: 1;
+}
+
+.order-item-details h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: #000000;
+}
+
+.order-item-details .price {
+  font-size: 18px;
+  color: #ff0000;
+}
+
+.order-item-details .quantity {
+  font-size: 16px;
+  color: #777;
+}

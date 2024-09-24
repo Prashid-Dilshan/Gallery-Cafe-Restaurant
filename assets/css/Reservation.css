@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #01061a, #1477cd);
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 50px;
+  color:#e88d1e;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  font-weight: bold;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.table-plan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.table {
+  width: 120px;
+  height: 80px;
+  margin: 10px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 4px 4px 8px #aaaaaa, -4px -4px 8px #ffffff;
+}
+
+.table:hover {
+  border-color: #014dff;
+  background-color: #2cb5e2;
+  box-shadow: 12px 12px #bbbbbb, 12px 12px #23f0ff;
+}
+.table.selected {
+  border-color: #ff0000;
+  background-color: #e0ffe0;
+  box-shadow: inset 6px 6px 12px #aaaaaa, inset -6px -6px 12px #ffffff;
+}
+.table-label {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+button[type="button"] {
+  background-color: #ff9d2e; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+
+  margin-top: 10px;
+}
+button[type="button"]:hover {
+  background-color: #e88d1e;
+}

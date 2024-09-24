@@ -1,0 +1,133 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #01061a, #1477cd);
+
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color:rgb(255, 145, 0);
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+form {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 50px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-out;
+  border: 1px solid #ddd;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus,
+form input[type="time"]:focus,
+form input[type="number"]:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
+}
+
+
+    form #submit-button{
+      color: #000000;
+      background-color: #ffae2c;
+      width: 600px;
+      height: 40px;
+      border-radius: 2px white solid;
+    }
+
+    form #submit-button:hover{
+      color: #ffffff;
+      background-color: #ff9d00;
+      width: 600px;
+      height: 40px;
+      border-radius: 2px white solid;
+    }
+
+.parking-area {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.parking-spot {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.parking-spot:hover {
+  background: #f4f4f4;
+  border-color: #ff6f61;
+  transform: scale(1.1);
+}
+
+.parking-spot.selected {
+  background: #ff6f61;
+  color: #fff;
+  border-color: #ff6f61;
+}
+
+.parking-spot.reserved {
+  background: #ddd;
+  color: #aaa;
+  border-color: #bbb;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

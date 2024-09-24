@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  background: url("../images/login.jpg");
+  background-size: cover;
+  height: 110vh;
+}
+
+.container {
+  max-width: 600px;
+  max-height: 825px;
+  margin: auto ;
+  background-color: #ffffff;
+  padding: 10px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgb(255, 255, 255);
+  
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Lucida Handwriting', 'Lucida', cursive;
+  color: rgb(219, 244, 0);
+  text-shadow: 2px 2px 3px rgb(245, 17, 17);
+}
+
+
+.form-group {
+  margin-bottom: 25px;
+  font-family:'Great Vibes', cursive;
+  color: red;
+
+}
+
+
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"], input[type="time"], textarea, select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid green;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #f8ff2e;
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px ;
+  font-weight: bold;
+  border: solid 2px black;
+
+}
+
+input[type="submit"]:hover {
+  background-color: aqua;
+  color: white;
+  font-weight: bold;
+  border: solid 2px black;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+

@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  font-family: 'Poppins', sans-serif;
+}
+
+.message {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.message.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.message h1 {
+  color: #28a745;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.message h1:hover {
+  color: #1e7e34;
+}
+
+.loading {
+  margin: 20px 0;
+}
+
+.loading div {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 6px solid #28a745;
+  animation: spin 1.4s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+p {
+  color: #555;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}

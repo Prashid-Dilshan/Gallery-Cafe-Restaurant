@@ -1,0 +1,61 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #01061a, #1477cd);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.confirmation-container {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  text-align: center;
+}
+
+.message-box h1 {
+  color: #4caf50; /* Success color */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.message-box p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.message-box #order-number {
+  font-weight: bold;
+  color: #ff5722; /* Highlight color */
+}
+
+.message-box strong {
+  color: #009688; /* Emphasis color */
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2196f3; /* Primary button color */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #1976d2; /* Darker shade for hover effect */
+  transform: scale(1.05);
+}

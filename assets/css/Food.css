@@ -1,0 +1,318 @@
+/*
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #01061a, #1477cd);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.menu-container {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 1200px;
+  padding: 40px;
+  margin: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.menu-container h1 {
+  color: #f88400;
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.filter-form {
+  margin-bottom: 30px;
+}
+
+.filter-form select {
+  padding: 12px 20px;
+  width: 270px;
+  border-radius: 30px;
+  border: 2px solid #000000;
+  font-size: 16px;
+  background-color: #2e65c6;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.filter-form select:hover,
+.filter-form select:focus {
+  background-color: #e07a0e;
+  color: #ffffff;
+  border-color: #ff6f00;
+}
+
+.food-items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5px;
+
+}
+
+.food-item {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  width: 80%;
+  height: auto;
+}
+
+
+.food-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.food-item img {
+  padding: 10px;
+  width: 50%;
+  height: 200px; 
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 0.3s ease;
+}
+
+
+
+.food-item:hover img {
+  opacity: 0.8;
+}
+
+.food-item-details {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.food-item-details .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f60101;
+}
+
+.food-item-details .category {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #eb5331;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.order-now-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #0b84e1;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.order-now-btn:hover,
+.order-now-btn:focus {
+  background-color: #ff9d2e;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+*/
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #021223, #0eb7ff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333;
+}
+
+
+
+
+a.back-button button {
+  background: linear-gradient(135deg, #ff9d2e, #ff6f00);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+
+a.back-button button:hover,
+a.back-button button:focus {
+  background: linear-gradient(135deg, #ff6f00, #ff9d2e);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+a.back-button button:focus {
+  box-shadow: 0 0 0 3px rgba(255, 155, 55, 0.5);
+}
+
+
+
+
+.menu-container {
+  background: linear-gradient(145deg, #ffffff, #f9f9f9);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1200px;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+}
+
+.menu-container h1 {
+  color: #ef9b00;
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.filter-form {
+  margin-bottom: 20px;
+}
+
+.filter-form select {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #6a6666;
+  font-size: 16px;
+  background-color: #ffffff;
+  width: 180px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none; 
+  background-image: linear-gradient(45deg, transparent 50%, #3392ff 50%), linear-gradient(135deg, #4a90e2 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(100% - 20px), calc(100% - 15px) calc(100% - 15px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+.filter-form select:hover,
+.filter-form select:focus {
+  border-color: #4a90e2;
+  background-color: #a0cdf5;
+  color: #333;
+  background-image: linear-gradient(45deg, transparent 50%, #ff5959 50%), linear-gradient(135deg, #f40b0b 50%, transparent 50%);
+}
+
+.food-items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.food-item {
+  background: linear-gradient(145deg, #ffffff, #f9f9f9);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.food-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.food-item img {
+  width: 100%;
+  height:280px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.food-item:hover img {
+  opacity: 0.85;
+}
+
+.food-item-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.food-item-details h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.food-item-details h3:hover {
+  color: #0a7cff;
+}
+
+.food-item-details p {
+  margin: 8px 0;
+  color: #000000;
+}
+
+.food-item-details .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #de1600;
+}
+
+
+
+.order-now-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #4a90e2, #ff9100);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.order-now-btn:hover,
+.order-now-btn:focus {
+  background: linear-gradient(135deg, #ff9100, #4a90e2);
+  transform: scale(1.05);
+  color: black;
+}

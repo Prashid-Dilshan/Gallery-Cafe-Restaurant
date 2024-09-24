@@ -1,0 +1,180 @@
+/*
+body {
+  background: url("../images/login-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #0b84e1;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+input[type="email"], input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #0b84e1;
+  outline: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #0b84e1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #004579;
+  transform: scale(1.05);
+}
+
+.error-message {
+  color: #d9534f;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+*/
+
+
+
+body {
+  background: url("../images/staff login.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 50px;
+
+}
+
+h2::after {
+  content: "";
+  width: 70px;
+  height: 5px;
+  background: #ff9900;
+  border-radius: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+
+label{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  margin-top: 10px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d9cccc;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #0b84e1;
+  box-shadow: 0 0 20px rgba(11, 132, 225, 0.5);
+  outline: none;
+  background-color: #f0f9ff;
+}
+
+button {
+  background-color: #0b84e1;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(11, 132, 225, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffc400;
+  transform: translateY(-4px);
+  color: black;
+  border: 2px black solid;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.error-message {
+  color: #d9534f;
+  font-size: 15px;
+  margin-top: 15px;
+  font-weight: 600;
+}

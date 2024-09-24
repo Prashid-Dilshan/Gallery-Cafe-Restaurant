@@ -1,0 +1,56 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #01061a, #1477cd);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.confirmation-container {
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  color: #333;
+}
+
+.message-box h1 {
+  font-size: 2.5em;
+  color: #28a745;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.message-box p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.message-box #reservation-time {
+  font-weight: bold;
+  color: #ff9d2e;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+}
